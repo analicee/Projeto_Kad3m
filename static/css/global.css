@@ -1,0 +1,172 @@
+/* RESET---- */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* VARIAVEIS DE COR---- */
+html{
+    --black-color:#343434; 
+    --salmon-color: #FFFBF5;
+    --grey-color:#AEAEAE;
+    --red-color:#924336;
+     display: flex;
+     height: 100vh;
+
+
+/* Padronizando o tamanho da fonte da página para 62.5% dos 100% que era. Essa modificação ajuda a conveter os valores do figma e na responsividade da página. */
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: var(--black);
+}
+
+body,button, input, textarea{
+    font-size: clamp(14px, 1.6rem, 2vw);
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* para padronizar doto o conteudo da tela, tirando as margins e coupando 100% da largura da tela. */
+.content {
+    width: 100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+   
+   
+
+} 
+/* ----------------------------NAVBAR--------------------------------------------------- */
+.navbar{
+    height: 100vh;
+    width: 18vw;
+    background: var(--salmon-color);
+
+ 
+}
+.header-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+} 
+.navbar-links{
+    margin-top: 20rem;
+    height: 30%;
+    
+}
+
+li{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+li > img, a{
+    margin-left: 1rem;
+}
+li > .selection{
+    height: 4rem;
+    width: 0.8rem;
+    border-radius: 20px;
+}
+
+li:hover{
+    background: white;
+}
+
+.navbar-decoration{
+    height: 30%;
+    width: 100%;
+    background-image: url("../img/navbar-decoration.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* ----------------------------MAIN--------------------------------------------------- */
+main{
+    background: var(--salmon-color);
+    height: 100vh;
+    width: 82vw;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    width: 100%;
+  
+
+   
+}
+/* BARRA DE PESQUISA */
+.resarch{
+    height: 100%;
+    width: 40vw;
+    font-size: 2rem;
+   
+}
+/* PROFILE */
+.profile{
+    display: flex;
+    align-items: center;
+    /* align-content: space-between; */
+    height: 100%;
+    width: 22vw;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: red;
+}
+.profile p{
+    font-size: 1.1rem;
+    margin-right: 0.8rem;
+    font-weight: 700;
+    
+}
+.profile-user-photo{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-image: url("../img/profile-photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.8rem;
+}
+#separator-header-main{
+    height: 4rem;
+    width: 0.15rem;
+    border-radius: 40px;
+    background: var(--black-color);
+    margin-right: 0.8rem;
+    
+}
+ 
+/* ---------------------------CONTAINER--------------------------------------- */
+.main-title{
+    display: flex;
+   align-items: center;
+    height: 5rem;
+    width: 100%;
+    margin-left: 5rem;
+}
+/* WRAPPER */
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    background: red;
+}
+.wrapper .profile-user-photo{
+    height: 20rem;
+    width: 20rem;
+}
